@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const logout = async () => {
-    await localStorage.removeItem("user");
+    await localStorage.removeItem('user');
     await window.location.reload(true);
   };
   return (
     <div className="header">
       <Link className="title">Todo List</Link>
 
-      {localStorage.getItem("user") ? (
+      {localStorage.getItem('user') ? (
         <div>
           <Link to="/taches">Taches</Link>
           <Link to="/" onClick={() => logout()}>

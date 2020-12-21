@@ -23,6 +23,9 @@ export default (Component) => styled(Component)`
     cursor: pointer;
     float: left;
   }
+  .login p{
+      color: red;
+  }
   .task {
     width: 100em;
     padding: 50px;

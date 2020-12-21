@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const AddTask = (props) => {
   const [taskName, setTaskName] = useState('');
@@ -13,18 +13,22 @@ const AddTask = (props) => {
     <div className="task">
       <h2>Créer une nouvelle tache</h2>
       <form onSubmit={onSubmitHandler}>
-        <label>Nom de la tache</label>
-        <input
-          name="taskName"
-          value={taskName}
-          onChange={(e) => setTaskName(e.target.value)}
-        />
-        <label>Description de la tache en une ligne</label>
-        <input
-          name="description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
+        <label htmlFor="taskName">
+          Nom de la tache
+          <input
+            name="taskName"
+            value={taskName}
+            onChange={(e) => setTaskName(e.target.value)}
+          />
+        </label>
+        <label htmlFor="description">
+          Description de la tache en une ligne
+          <input
+            name="description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </label>
         <input className="btn" type="submit" value="Ajouter la tache" />
       </form>
     </div>
