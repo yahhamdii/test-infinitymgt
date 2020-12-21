@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 export const Login = () => {
   const history = useHistory();
   const successLogin = () => {
-    localStorage.setItem("user", JSON.stringify(dataUser));
-    history.push("/taches");
+    localStorage.setItem('user', JSON.stringify(dataUser));
+    history.push('/taches');
     window.location.reload(true);
   };
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const dataUser = {
     email: "test@test.com",
     password: "test",

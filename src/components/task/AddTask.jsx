@@ -10,7 +10,7 @@ const AddTask = (props) => {
   };
 
   return (
-    <div className="login">
+    <div className="task">
       <h2>Créer une nouvelle tache</h2>
       <form onSubmit={onSubmitHandler}>
         <label>Nom de la tache</label>

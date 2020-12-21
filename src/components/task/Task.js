@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Task = ({
   id,
@@ -15,10 +16,11 @@ const Task = ({
         <table cellPadding="0" cellSpacing="0" border="0">
            <td><b>{taskName}</b></td> 
           <td> {description}</td>
-          <td>{done ? <div className="completed">Completé</div> : <div className="notcompleted">Non Completée</div>}</td>
           <td>
-            <button onClick={() => onDeleteHandler(index)}>Delete</button>
+            <Link onClick={() => onDeleteHandler(index)}>Supprimer</Link>
           </td>
+          <td>{done ? <div className="completed">Completé</div> : <div className="notcompleted">Non Completée</div>}</td>
+         
         </table>
       </div>
     </div>

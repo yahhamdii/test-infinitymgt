@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 
 export default (Component) => styled(Component)`
-  input {
+  .login {
+    margin: auto;
+    width: 50em;
+    padding: 50px;
+  }
+  .login input {
     width: 35%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     display: block;
   }
-  .btn {
+  .login .btn {
     background-color: #092ba8;
     border: none;
     color: white;
@@ -18,11 +23,27 @@ export default (Component) => styled(Component)`
     cursor: pointer;
     float: left;
   }
-  .login {
-    margin: auto;
-    width: 50em;
+  .task {
+    width: 100em;
     padding: 50px;
   }
+  .task input {
+    width: 200px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .task .btn {
+    background-color: #092ba8;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
   .header {
     overflow: hidden;
     margin: 0px auto 0px auto;
