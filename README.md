@@ -6,7 +6,11 @@ github
 #### implementation of the application
 open your terminal and type : 
 git clone https://github.com/yahhamdii/test-infinitymgt.git
+
 cd test-infinitymgt
+
 yarn
+
 yarn start
+
 
