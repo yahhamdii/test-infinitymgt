@@ -1,17 +1,18 @@
 import React from 'react'
 import Task from './Task'
 
-const TaskList = ({todos, onDeleteHandler}) => {
+const TaskList = ({tasks, onDeleteHandler}) => {
   return (
     <div>
-      {todos.length === 0 && <div>Il n'y a pas de tache.</div>}
+      {tasks.length === 0 && <div>Il n'y a pas de tache.</div>}
       {
-        todos.length > 0 &&
+        tasks.length > 0 &&
         <div>
+            <h2>Liste des taches</h2>
           {
-            todos.map((todo, index) => {
+            tasks.map((task, index) => {
               return <Task index={index}
-                {...todo}
+                {...task}
                 onDeleteHandler={onDeleteHandler} />
             })
           }

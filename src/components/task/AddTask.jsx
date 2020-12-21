@@ -6,7 +6,7 @@ const AddTask = (props) => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    props.onAddTodoHandler({ taskName, description });
+    props.onAddTaskHandler({ taskName, description });
   };
 
   return (

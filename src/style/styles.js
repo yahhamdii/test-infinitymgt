@@ -85,6 +85,6 @@ export default (Component) => styled(Component)`
   .completed {
     background-color: green;
     color: #fff;
-    width: 100px;
+    width: 150px;
   }
 `;

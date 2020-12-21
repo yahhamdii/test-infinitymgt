@@ -4,7 +4,7 @@ import AddTask from './AddTask';
 
 export const Task = () => {
  
-  const [todos, setTodos] = useState([    {
+  const [tasks, setTasks] = useState([    {
     id: 1,
     taskName: 'Envoyer un e-mail',
     description: 'A toute l\'equipe',
@@ -12,24 +12,22 @@ export const Task = () => {
   }])
 
   const onDeleteHandler = (index) => {
-    const todos = todos.slice(0);
-    todos.splice(index, 1);
-    this.setState({ todos });
+    tasks.splice(index, 1);
+    setTasks([...tasks]);
   };
 
-  const onAddTaskHandler = (newTodo) => {
-    const todos = todos.slice(0);
-    todos.push(newTodo);
-    setTodos({ todos });
+  const onAddTaskHandler = (newTask) => {
+    tasks.push(newTask);
+    setTasks([...tasks]);
   };
 
     return (
       <div>
         <TaskList
-          todos={todos}
+          tasks={tasks}
           onDeleteHandler={onDeleteHandler}
         />
-        <AddTask onAddTodoHandler={onAddTaskHandler} />
+        <AddTask onAddTaskHandler={onAddTaskHandler} />
       </div>
     );
 }

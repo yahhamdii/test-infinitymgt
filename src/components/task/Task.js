@@ -12,7 +12,6 @@ const Task = ({
   return (
     <div className="tbl-header">
       <div className="tbl-content">
-      <h2>Liste des taches</h2>
         <table cellPadding="0" cellSpacing="0" border="0">
            <td><b>{taskName}</b></td> 
           <td> {description}</td>
