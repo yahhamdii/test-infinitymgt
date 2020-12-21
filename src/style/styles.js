@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default (Component) => styled(Component)`
-  input { 
+  input {
     width: 35%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -27,9 +27,9 @@ export default (Component) => styled(Component)`
     overflow: hidden;
     margin: 0px auto 0px auto;
     padding: 0px 20px 0px 20px;
-    background: #F8F9FB;
+    background: #f8f9fb;
   }
-  
+
   .header a {
     float: left;
     display: block;
@@ -40,7 +40,30 @@ export default (Component) => styled(Component)`
     font-size: 14px;
   }
   .header .title {
-      font-size: 17px;
+    font-size: 17px;
   }
-    
+  .tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .tbl-content {
+    height: auto;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  table {
+    width: 100%;
+    margin: 30px auto 0px auto;
+    table-layout: fixed;
+  }
+  .notcompleted {
+    background-color: red;
+    color: #fff;
+    width: 150px;
+  }
+  .completed {
+    background-color: green;
+    color: #fff;
+    width: 100px;
+  }
 `;
